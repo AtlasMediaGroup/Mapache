@@ -4,7 +4,7 @@
   "demo": "https://godofredo.ninja",
   "version": "5.0.0",
   "engines": {
-    "ghost": ">=6.0.0"
+    "ghost": ">=5.0.0"
   },
   "license": "gpl-3.0",
   "screenshots": {
