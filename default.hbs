@@ -49,6 +49,8 @@
             --header-color-hover: {{@custom.header_text_color_hover}};
             {{/if}}
             --logo-width: {{#if @custom.logo_width}}{{@custom.logo_width}}{{else}}11.25rem{{/if}};
+            {{#if @site.font_heading}}--gh-font-heading: "{{@site.font_heading}}";{{/if}}
+            {{#if @site.font_body}}--gh-font-body: "{{@site.font_body}}";{{/if}}
         }
     </style>
 
