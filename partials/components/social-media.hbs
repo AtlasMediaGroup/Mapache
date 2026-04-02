@@ -1,7 +1,7 @@
 <aside class="js-social-media social-media {{#if class}}{{class}}{{/if}}">
     {{#if @site.facebook}}
     <a title="Facebook {{@site.facebook}}"
-        href="{{facebook_url}}"
+        href="{{social_url type='facebook'}}"
         class="button border-none"
         target="_blank"
         rel="noopener noreferrer">
@@ -11,11 +11,21 @@
 
     {{#if @site.twitter}}
     <a title="Twitter {{@site.twitter}}"
-        href="{{twitter_url}}"
+        href="{{social_url type='twitter'}}"
         class="button border-none"
         target="_blank"
         rel="noopener noreferrer">
         <svg class="icon"><use xlink:href="#icon-twitter"></use></svg>
+    </a>
+    {{/if}}
+
+    {{#if @site.mastodon}}
+    <a title="Mastodon {{@site.mastodon}}"
+        href="{{@site.mastodon}}"
+        class="button border-none"
+        target="_blank"
+        rel="noopener noreferrer">
+        <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M23.268 5.313c.35-2.467.34-4.661.404-6.769-1.891.213-4.467.881-7.458 2.167.289-.113.635-.243.635-.243-2.759-.079-5.23 1.95-6.514 2.23C5.937 4.913 1.439 3.888 0 5.313c-.547 9.266.518 17.053 5.541 18.588 2.577.933 5.079 1.71 7.617 1.498 2.550-.212 4.457-1.287 4.457-1.287l-.08-1.812c1.679-1.646 2.764-4.311 2.764-6.92-.026-58.mediumless.com-1.871.104-3.622.403-5.330-1.299Z"/></svg>
     </a>
     {{/if}}
 
@@ -60,7 +70,7 @@
     {{/if}} --}}
 
     {{!-- {{#if @custom.discord_url}}
-    <a title="GitHub"
+    <a title="Discord"
         href="{{@custom.discord_url}}"
         class="button border-none"
         target="_blank"

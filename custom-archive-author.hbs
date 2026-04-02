@@ -11,7 +11,7 @@
 <div class="archive-author-inner container mx-auto my-10">
     <div class="grid gap-12 max-w-5xl mx-auto md:grid-cols-2 lg:grid-cols-3">
 
-        {{#get "authors" limit="all"}}{{#foreach authors}}
+        {{#get "authors" limit="100"}}{{#foreach authors}}
 
         <article class="author-card relative flex flex-col">
             <a href="{{url}}" class="author-card-avatar relative bg-gray-100 h-72">
@@ -33,9 +33,8 @@
                 </div>
 
                 <div class="author-social-media flex mt-5">
-                    {{#if facebook}}<a href="{{facebook_url}}" class="button w-full is-black is-outlined rounded-none text-sm" title="Facebook" target="_blank" rel="noopener noreferrer">Facebook</a>{{/if}}
-                    {{#if twitter}}<a href="{{twitter_url}}" class="button w-full is-black is-outlined rounded-none text-sm" title="{{twitter}}" target="_blank" rel="noopener noreferrer">Twitter</a>{{/if}}
-                </div>
+                    {{#if facebook}}<a href="{{social_url type='facebook'}}" class="button w-full is-black is-outlined rounded-none text-sm" title="Facebook" target="_blank" rel="noopener noreferrer">Facebook</a>{{/if}}
+                    {{#if twitter}}<a href="{{social_url type='twitter'}}" class="button w-full is-black is-outlined rounded-none text-sm" title="{{twitter}}" target="_blank" rel="noopener noreferrer">Twitter</a>{{/if}}                    {{#if mastodon}}<a href="{{mastodon}}" class="button w-full is-black is-outlined rounded-none text-sm" title="Mastodon" target="_blank" rel="noopener noreferrer">Mastodon</a>{{/if}}                </div>
             </div>
         </article>
 

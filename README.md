@@ -130,7 +130,6 @@
 - Secondary navigation in the footer
 - Pagination (Button load more)
 - Lazy Loading for images
-- [AMP](https://github.com/godofredoninja/Hodor-AMP-Ghost) Template
 
 ## Contributing
 
@@ -163,7 +162,6 @@ Become a financial contributor and help us sustain our community.
 
 ## Credits
 
-- [Hodor AMP](https://github.com/godofredoninja/Hodor-AMP-Ghost)
 - [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss)
 - [Ionicons](https://github.com/ionic-team/ionicons)
 - [IcoMoon](https://icomoon.io/)
